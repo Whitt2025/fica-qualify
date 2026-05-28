@@ -23,21 +23,16 @@ body {
 .progress-track { height: 3px; background: #e8e7e3; border-radius: 99px; }
 .progress-fill { height: 3px; background: #1a1a18; border-radius: 99px; transition: width 0.4s ease; }
 .progress-label { font-size: 11px; color: #888780; margin-top: 6px; display: flex; justify-content: space-between; }
-.phase-badge { display: inline-block; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 99px; margin-bottom: 1rem; }
-.phase-1 { background: #e8e7e3; color: #5f5e5a; }
-.phase-2 { background: #0d1f3c; color: #c9a227; }
+.phase-badge { display: inline-block; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 99px; margin-bottom: 1rem; background: #e8e7e3; color: #5f5e5a; }
 .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #888780; margin-bottom: 1.25rem; }
 .field { margin-bottom: 1rem; }
 .field:last-child { margin-bottom: 0; }
 .field label { display: block; font-size: 13px; font-weight: 500; color: #5f5e5a; margin-bottom: 6px; line-height: 1.4; }
 .field label .req { color: #a32d2d; margin-left: 2px; }
-.field input[type="text"],
-.field input[type="tel"],
-.field select {
+.field input[type="text"], .field input[type="tel"], .field select {
   width: 100%; font-size: 15px; font-weight: 500; color: #1a1a18;
   background: #f5f4f0; border: 0.5px solid #b4b2a9; border-radius: 8px;
-  padding: 10px 12px; outline: none; transition: border-color 0.15s, background 0.15s;
-  -webkit-appearance: none;
+  padding: 10px 12px; outline: none; transition: border-color 0.15s, background 0.15s; -webkit-appearance: none;
 }
 .field input:focus, .field select:focus { border-color: #444441; background: #fff; }
 .field input::placeholder { color: #b4b2a9; font-weight: 400; }
@@ -52,158 +47,122 @@ body {
 .radio-opt.sel { border-color: #1a1a18; background: #fff; font-weight: 500; }
 .radio-opt input { accent-color: #1a1a18; flex-shrink: 0; }
 .hint { font-size: 11px; color: #888780; margin-top: 4px; line-height: 1.5; }
-.err { font-size: 11px; color: #a32d2d; margin-top: 4px; display: none; }
+.err { font-size: 11px; color: #a32d2d; background: #fcebeb; border-radius: 4px; padding: 4px 8px; margin-top: 6px; display: none; font-weight: 500; }
 .nav { display: flex; align-items: center; gap: 10px; margin-top: 1.5rem; }
 .btn { padding: 10px 20px; font-size: 13px; font-weight: 500; border-radius: 8px; cursor: pointer; transition: opacity 0.15s; }
 .btn-primary { background: #1a1a18; color: #fff; border: none; }
 .btn-secondary { background: #fff; color: #5f5e5a; border: 0.5px solid #b4b2a9; }
 .btn:hover { opacity: 0.82; }
 .step-ct { font-size: 11px; color: #888780; margin-left: auto; }
-.result-qualify { background: #fff; border-radius: 16px; border: 1.5px solid #1a1a18; padding: 1.75rem; margin-bottom: 1rem; }
-.result-qualify h2 { font-size: 20px; font-weight: 500; color: #1a1a18; margin-bottom: 6px; }
-.result-qualify .sub { font-size: 13px; color: #5f5e5a; line-height: 1.6; }
 .result-disq { background: #fcebeb; border-radius: 16px; border: 0.5px solid #f7c1c1; padding: 1.75rem; margin-bottom: 1rem; }
 .result-disq h2 { font-size: 18px; font-weight: 500; color: #a32d2d; margin-bottom: 6px; }
 .result-disq .sub { font-size: 13px; color: #a32d2d; line-height: 1.6; }
-.summary-card { background: #fff; border-radius: 12px; border: 0.5px solid #d3d1c7; padding: 1.25rem; margin-bottom: 10px; }
-.summary-card h4 { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #888780; margin-bottom: 10px; }
-.s-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 5px 0; border-bottom: 0.5px solid #f0efe9; font-size: 12px; }
-.s-row:last-child { border-bottom: none; }
-.s-key { color: #888780; flex-shrink: 0; }
-.s-val { color: #1a1a18; font-weight: 500; text-align: right; max-width: 60%; }
-.flag { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 99px; }
-.flag-warn { background: #faeeda; color: #854f0b; }
-.flag-ok { background: #eaf3de; color: #3b6d11; }
-.flag-bad { background: #fcebeb; color: #a32d2d; }
-.flag-info { background: #e8e7e3; color: #444441; }
-.flags-list { display: flex; flex-direction: column; gap: 8px; }
-.flag-row { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: #5f5e5a; line-height: 1.5; padding: 6px 0; border-bottom: 0.5px solid #f0efe9; }
-.flag-row:last-child { border-bottom: none; }
-.phase2-intro { background: #0d1f3c; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
-.phase2-intro h3 { font-size: 15px; font-weight: 500; color: #c9a227; margin-bottom: 6px; }
-.phase2-intro p { font-size: 12px; color: rgba(255,255,255,0.8); line-height: 1.6; }
-.checklist { display: flex; flex-direction: column; gap: 6px; margin-top: 1rem; }
-.check-item-final { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: rgba(255,255,255,0.85); line-height: 1.5; }
-.check-dot { width: 16px; height: 16px; border-radius: 50%; background: #c9a227; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; font-size: 8px; font-weight: 700; color: #0d1f3c; }
 .restart-btn { width: 100%; padding: 10px; font-size: 13px; font-weight: 500; background: #fff; color: #5f5e5a; border: 0.5px solid #b4b2a9; border-radius: 8px; cursor: pointer; margin-top: 8px; }
-.restart-btn:hover { background: #f5f4f0; }
-.disclaimer { font-size: 10px; color: #b4b2a9; text-align: center; margin-top: 1.5rem; line-height: 1.6; }
-.print-btn { width: 100%; padding: 11px; font-size: 13px; font-weight: 600; background: #0d1f3c; color: #c9a227; border: none; border-radius: 8px; cursor: pointer; margin-top: 8px; letter-spacing: 0.02em; }
+.print-btn { width: 100%; padding: 12px; font-size: 14px; font-weight: 600; background: #0d1f3c; color: #c9a227; border: none; border-radius: 8px; cursor: pointer; margin-top: 8px; letter-spacing: 0.02em; }
 .print-btn:hover { opacity: 0.88; }
+.qualify-screen { background: #fff; border-radius: 16px; border: 1.5px solid #0d1f3c; padding: 1.75rem; margin-bottom: 1rem; }
+.qualify-screen h2 { font-size: 20px; font-weight: 600; color: #0d1f3c; margin-bottom: 8px; }
+.qualify-screen p { font-size: 13px; color: #5f5e5a; line-height: 1.6; }
+.disclaimer { font-size: 10px; color: #b4b2a9; text-align: center; margin-top: 1.5rem; line-height: 1.6; }
 
-/* ── PRINT STYLES ── */
+/* ── PRINT ── */
 @media print {
-  body { background: #fff; padding: 0; display: block; }
-  .page { max-width: 100%; }
-  .no-print { display: none !important; }
-  .print-only { display: block !important; }
-
-  .pdf-page {
-    width: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #1a1a18;
-    padding: 0;
-  }
-
-  .pdf-header {
-    background: #0d1f3c;
-    padding: 28px 36px 22px;
-    color: #fff;
-  }
-  .pdf-header .co-name {
-    font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
-    text-transform: uppercase; color: #c9a227; margin-bottom: 8px;
-  }
-  .pdf-header h1 {
-    font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 6px; line-height: 1.2;
-  }
-  .pdf-header .tagline {
-    font-size: 12px; color: rgba(255,255,255,0.78); line-height: 1.6; max-width: 480px;
-  }
-  .pdf-header .prospect-name {
-    font-size: 14px; font-weight: 700; color: #c9a227; margin-top: 10px;
-  }
-
-  .pdf-body { padding: 24px 36px; }
-
-  .pdf-qualify-banner {
-    background: #f0faf0; border-left: 4px solid #2d7a2d;
-    padding: 12px 16px; border-radius: 0 6px 6px 0; margin-bottom: 20px;
-  }
-  .pdf-qualify-banner p {
-    font-size: 12px; color: #1a4a1a; line-height: 1.6;
-  }
-
-  .pdf-section-title {
-    font-size: 10px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.1em; color: #888780; border-bottom: 1.5px solid #c9a227;
-    padding-bottom: 4px; margin-bottom: 12px; margin-top: 20px;
-  }
-
-  .pdf-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-
-  .pdf-field { margin-bottom: 10px; }
-  .pdf-field .lbl { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #888780; margin-bottom: 2px; }
-  .pdf-field .val { font-size: 12px; font-weight: 600; color: #1a1a18; }
-  .pdf-field .val.empty { color: #b4b2a9; font-weight: 400; font-style: italic; }
-
-  .pdf-checklist-title {
-    font-size: 13px; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; margin-top: 22px;
-  }
-  .pdf-checklist { border: 1.5px solid #0d1f3c; border-radius: 8px; overflow: hidden; }
-  .pdf-check-item {
-    display: flex; align-items: flex-start; gap: 12px;
-    padding: 11px 14px; border-bottom: 0.5px solid #d3d1c7;
-    background: #fff;
-  }
-  .pdf-check-item:last-child { border-bottom: none; }
-  .pdf-check-item:nth-child(odd) { background: #fafaf8; }
-  .pdf-chk {
-    width: 18px; height: 18px; border: 1.5px solid #0d1f3c; border-radius: 3px;
-    flex-shrink: 0; margin-top: 1px;
-  }
-  .pdf-check-text { font-size: 12px; color: #1a1a18; line-height: 1.5; }
-  .pdf-check-sub { font-size: 10px; color: #5f5e5a; margin-top: 2px; line-height: 1.4; }
-
-  .pdf-footer {
-    background: #c9a227; padding: 12px 36px;
-    display: flex; justify-content: space-between; align-items: center;
-    margin-top: 28px;
-  }
-  .pdf-footer .ft-left { font-size: 11px; font-weight: 700; color: #0d1f3c; text-transform: uppercase; letter-spacing: 0.04em; }
-  .pdf-footer .ft-right { font-size: 13px; font-weight: 700; color: #0d1f3c; }
-
-  .pdf-flags { margin-top: 16px; }
-  .pdf-flag-item { display: flex; gap: 8px; font-size: 11px; color: #5f5e5a; padding: 5px 0; border-bottom: 0.5px solid #f0efe9; line-height: 1.5; }
-  .pdf-flag-item:last-child { border-bottom: none; }
-  .pdf-flag-badge { font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 99px; flex-shrink: 0; white-space: nowrap; }
-  .pdf-flag-warn-b { background: #faeeda; color: #854f0b; }
-  .pdf-flag-info-b { background: #e8e7e3; color: #444441; }
-
   @page { margin: 0; size: letter; }
+  body { background: #fff; padding: 0; display: block; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  .no-print { display: none !important; }
+  #printArea { position: static !important; left: 0 !important; width: 100% !important; }
+
+  .pdf { width: 100%; color: #1a1a18; }
+
+  /* Header */
+  .pdf-hdr { background: #0d1f3c; padding: 30px 48px 24px; }
+  .pdf-hdr-top { font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #c9a227; margin-bottom: 10px; }
+  .pdf-hdr h1 { font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 8px; }
+  .pdf-hdr h1 span { color: #c9a227; }
+  .pdf-hdr-sub { font-size: 11.5px; color: #e0e8f0; line-height: 1.7; max-width: 500px; }
+  .pdf-hdr-biz { margin-top: 14px; padding-top: 14px; border-top: 0.5px solid rgba(255,255,255,0.2); display: flex; gap: 28px; }
+  .pdf-hdr-biz-item { }
+  .pdf-hdr-biz-label { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #c9a227; margin-bottom: 2px; }
+  .pdf-hdr-biz-val { font-size: 12px; font-weight: 600; color: #fff; }
+
+  /* Body */
+  .pdf-body { padding: 28px 48px; }
+
+  /* Excitement band */
+  .pdf-excite { background: #f5f0e0; border-left: 4px solid #c9a227; padding: 14px 18px; border-radius: 0 8px 8px 0; margin-bottom: 24px; }
+  .pdf-excite p { font-size: 11.5px; color: #2a1f00; line-height: 1.7; }
+  .pdf-excite strong { color: #0d1f3c; }
+
+  /* Section headers */
+  .pdf-sec-hdr { margin-bottom: 14px; margin-top: 22px; padding-bottom: 5px; border-bottom: 2px solid #c9a227; }
+  .pdf-sec-hdr h2 { font-size: 13px; font-weight: 700; color: #0d1f3c; text-transform: uppercase; letter-spacing: 0.05em; }
+  .pdf-sec-hdr p { font-size: 10.5px; color: #333333; margin-top: 4px; line-height: 1.6; font-weight: 500; }
+
+  /* Section 2 page break */
+  .pdf-sec2 { page-break-before: always; padding-top: 36px; }
+
+  /* Info items — section 1 */
+  .pdf-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; margin-bottom: 6px; }
+  .pdf-info-item { }
+  .pdf-info-label { font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #555555; margin-bottom: 2px; }
+  .pdf-info-val { font-size: 11.5px; font-weight: 600; color: #1a1a18; }
+  .pdf-info-val.blank { color: #777777; font-style: italic; font-weight: 500; }
+  .pdf-info-val.blank::after { content: '________________________'; color: #aaaaaa; font-style: normal; }
+
+  /* Doc checklist — section 2 */
+  .pdf-doc-item { display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px; border-bottom: 0.5px solid #e8e7e3; }
+  .pdf-doc-item:last-child { border-bottom: none; }
+  .pdf-doc-item:nth-child(odd) { background: #fafaf8; }
+  .pdf-doc-box { width: 14px; height: 14px; border: 1.5px solid #0d1f3c; border-radius: 2px; flex-shrink: 0; margin-top: 2px; }
+  .pdf-doc-text { flex: 1; }
+  .pdf-doc-title { font-size: 11px; font-weight: 700; color: #0d1f3c; margin-bottom: 2px; }
+  .pdf-doc-desc { font-size: 10px; color: #333333; line-height: 1.55; font-weight: 500; }
+  .pdf-doc-wrap { border: 1px solid #d3d1c7; border-radius: 8px; overflow: hidden; }
+
+  /* Entity notice */
+  .pdf-entity-notice { background: #0d1f3c; border-radius: 6px; padding: 12px 16px; margin-bottom: 12px; }
+  .pdf-entity-notice p { font-size: 11px; color: #e0e8f0; line-height: 1.7; }
+  .pdf-entity-notice strong { color: #c9a227; }
+
+  /* Next step CTA */
+  .pdf-cta { background: #0d1f3c; border-radius: 8px; padding: 16px 18px; margin-top: 22px; display: flex; justify-content: space-between; align-items: center; }
+  .pdf-cta-left h3 { font-size: 13px; font-weight: 700; color: #c9a227; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+  .pdf-cta-left p { font-size: 11px; color: #e0e8f0; line-height: 1.6; font-weight: 500; }
+  .pdf-cta-right { text-align: right; flex-shrink: 0; margin-left: 20px; }
+  .pdf-cta-right .name { font-size: 13px; font-weight: 700; color: #fff; }
+  .pdf-cta-right .phone { font-size: 18px; font-weight: 700; color: #c9a227; }
+
+  /* Footer */
+  .pdf-ftr { background: #c9a227; padding: 8px 48px; display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
+  .pdf-ftr-left { font-size: 8.5px; font-weight: 700; color: #0d1f3c; text-transform: uppercase; letter-spacing: 0.05em; }
+  .pdf-ftr-right { font-size: 8.5px; color: #0d1f3c; }
+
+  /* Flags */
+  .pdf-flags { margin-top: 14px; }
+  .pdf-flag { display: flex; gap: 8px; font-size: 10px; color: #5f5e5a; padding: 5px 0; border-bottom: 0.5px solid #f0efe9; line-height: 1.5; }
+  .pdf-flag:last-child { border-bottom: none; }
+  .pdf-flag-badge { font-size: 8px; font-weight: 700; padding: 2px 7px; border-radius: 99px; flex-shrink: 0; white-space: nowrap; background: #faeeda; color: #854f0b; }
 }
-.print-only { display: none; }
+#printArea { position: absolute; left: -9999px; top: 0; width: 816px; }
 </style>
 </head>
 <body>
-<div class="page">
-  <p class="brand no-print">The Inspire Group &mdash; FICA Tip Credit Division</p>
-  <div class="progress-wrap no-print">
+<div class="page no-print">
+  <p class="brand">The Inspire Group &mdash; FICA Tip Credit Division</p>
+  <div class="progress-wrap">
     <div class="progress-track"><div class="progress-fill" id="prog" style="width:0%"></div></div>
     <div class="progress-label"><span id="prog-section">Getting started</span><span id="prog-step"></span></div>
   </div>
   <div id="app"></div>
-  <p class="disclaimer no-print">For internal use by The Inspire Group representatives only.<br/>This tool determines preliminary eligibility only and does not constitute tax advice.</p>
+  <p class="disclaimer">For internal use by The Inspire Group representatives only.<br/>This tool determines preliminary eligibility only and does not constitute tax advice.</p>
 </div>
-
-<!-- PRINT OUTPUT — hidden on screen, shown on print -->
-<div class="print-only" id="printArea"></div>
+<div id="printArea"></div>
 
 <script>
 const NO_TIP_STATES = ['Alaska','California','District of Columbia','Minnesota','Montana','Nevada','Oregon','Washington'];
 const STATES = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','Washington D.C.','West Virginia','Wisconsin','Wyoming'];
 
-const phase1 = [
+const steps = [
   {
     id: 'biz_info', section: 'Business basics',
     fields: [
@@ -222,13 +181,13 @@ const phase1 = [
         { v: 'other', l: 'Other industry' }
       ]},
       { id: 'entity_type', type: 'radio', label: 'Business entity type', req: true, options: [
-        { v: 'sole_prop', l: 'Sole proprietorship / single-member LLC' },
         { v: 'scorp', l: 'S corporation' },
         { v: 'partnership', l: 'Partnership / multi-member LLC' },
-        { v: 'ccorp', l: 'C corporation' }
+        { v: 'ccorp', l: 'C corporation' },
+        { v: 'sole_prop', l: 'Sole proprietorship / single-member LLC' }
       ]},
-      { id: 'multi_biz', type: 'radio', label: 'Does this owner operate multiple businesses?', req: true,
-        hint: 'Credit can be claimed across all qualifying locations — important for sizing total opportunity.',
+      { id: 'multi_biz', type: 'radio', label: 'Does this owner operate multiple businesses or locations?', req: true,
+        hint: 'Credit can be claimed across all qualifying locations — important for sizing the total opportunity.',
         options: [
           { v: 'no', l: 'No — single business / location' },
           { v: 'yes', l: 'Yes — multiple businesses or locations' }
@@ -242,7 +201,7 @@ const phase1 = [
     fields: [
       { id: 'has_tipped', type: 'radio', label: 'Does the business employ tipped workers?', req: true, options: [
         { v: 'yes', l: 'Yes — employees receive tips from customers' },
-        { v: 'no', l: 'No tipped employees' }
+        { v: 'no', l: 'No — does not qualify' }
       ]},
       { id: 'employee_type', type: 'radio', label: 'How are tipped workers classified?', req: true, options: [
         { v: 'w2', l: 'W-2 employees only' },
@@ -258,7 +217,7 @@ const phase1 = [
     fields: [
       { id: 'tips_reported', type: 'radio', label: 'Are employee tips reported to the employer and IRS via payroll?', req: true, options: [
         { v: 'yes', l: 'Yes — reported on Form 941 / W-2 Box 7' },
-        { v: 'no', l: 'No — not formally reported' },
+        { v: 'no', l: 'No — does not qualify' },
         { v: 'partial', l: 'Partially reported' }
       ]},
       { id: 'tip_type', type: 'radio', label: 'What is the primary tip type?', req: true, options: [
@@ -271,7 +230,7 @@ const phase1 = [
     ]
   },
   {
-    id: 'tax_history', section: 'Tax history',
+    id: 'tax_history', section: 'Tax & filing history',
     fields: [
       { id: 'filed_8846', type: 'radio', label: 'Has the business ever filed Form 8846 (FICA tip credit)?', req: true, options: [
         { v: 'no', l: 'No — never filed' },
@@ -283,74 +242,22 @@ const phase1 = [
         { v: 'low', l: 'Low / breakeven' },
         { v: 'no', l: 'No — losses or minimal income most years' }
       ]},
-      { id: 'years_open', type: 'text', label: 'Years in business', req: false, placeholder: 'e.g. 7 years' },
-      { id: 'cpa', type: 'text', label: 'Current CPA / tax preparer (if known)', req: false, placeholder: 'Name or firm' }
+      { id: 'years_open', type: 'text', label: 'Years in business', req: false, placeholder: 'e.g. 7 years' }
     ]
   }
 ];
 
-const phase2 = {
-  id: 'specialist_info', section: 'Specialist appointment info',
-  fields: [
-    { id: 'annual_revenue', type: 'radio', label: 'Approximate annual business revenue', req: true,
-      hint: 'Helps estimate the scale of tipped payroll and potential credit size.',
-      options: [
-        { v: 'under500k', l: 'Under $500,000' },
-        { v: '500k_1m', l: '$500,000 – $1 million' },
-        { v: '1m_3m', l: '$1 million – $3 million' },
-        { v: '3m_10m', l: '$3 million – $10 million' },
-        { v: 'over10m', l: 'Over $10 million' }
-      ]
-    },
-    { id: 'annual_payroll', type: 'radio', label: 'Approximate annual payroll / total employee spend', req: true,
-      hint: 'Payroll size directly determines FICA taxes paid — the foundation of the credit calculation.',
-      options: [
-        { v: 'under100k', l: 'Under $100,000' },
-        { v: '100k_300k', l: '$100,000 – $300,000' },
-        { v: '300k_750k', l: '$300,000 – $750,000' },
-        { v: '750k_2m', l: '$750,000 – $2 million' },
-        { v: 'over2m', l: 'Over $2 million' }
-      ]
-    },
-    { id: 'personal_income', type: 'radio', label: "Owner's approximate personal taxable income (last filed return)", req: true,
-      hint: 'For pass-through entities, the credit flows to the personal return. Higher income = stronger immediate refund.',
-      options: [
-        { v: 'under100k', l: 'Under $100,000' },
-        { v: '100k_250k', l: '$100,000 – $250,000' },
-        { v: '250k_500k', l: '$250,000 – $500,000' },
-        { v: 'over500k', l: 'Over $500,000' },
-        { v: 'prefer_not', l: 'Prefer not to say' }
-      ]
-    },
-    { id: 'best_contact', type: 'radio', label: 'Best way to reach the owner for a specialist appointment', req: true, options: [
-      { v: 'call', l: 'Phone call' },
-      { v: 'text', l: 'Text message' },
-      { v: 'email', l: 'Email' },
-      { v: 'inperson', l: 'In person — return visit' }
-    ]},
-    { id: 'email', type: 'text', label: 'Owner email address (if available)', req: false, placeholder: 'owner@restaurant.com' },
-    { id: 'best_time', type: 'text', label: 'Best time to reach them', req: false, placeholder: 'e.g. Weekday mornings, after 2pm' },
-    { id: 'notes', type: 'text', label: 'Rep notes (anything useful for the specialist)', req: false, placeholder: 'e.g. Very interested, has 2 locations, skeptical of CPAs...' }
-  ]
-};
-
 let currentStep = 0;
-let phase2Active = false;
 let answers = {};
-
 function g(id) { return answers[id] || ''; }
 
-const revenueMap = { under500k:'Under $500,000', '500k_1m':'$500,000 – $1 million', '1m_3m':'$1 million – $3 million', '3m_10m':'$3 million – $10 million', over10m:'Over $10 million' };
-const payrollMap = { under100k:'Under $100,000', '100k_300k':'$100,000 – $300,000', '300k_750k':'$300,000 – $750,000', '750k_2m':'$750,000 – $2 million', over2m:'Over $2 million' };
-const incomeMap  = { under100k:'Under $100,000', '100k_250k':'$100,000 – $250,000', '250k_500k':'$250,000 – $500,000', over500k:'Over $500,000', prefer_not:'Not provided' };
-const contactMap = { call:'Phone call', text:'Text message', email:'Email', inperson:'In-person visit' };
-const entityMap  = { sole_prop:'Sole prop / LLC', scorp:'S corporation', partnership:'Partnership / LLC', ccorp:'C corporation' };
-const industryMap = { food_bev:'Food & beverage', beauty:'Beauty & personal care', other:'Other' };
-const tipsMap = { yes:'Yes', no:'No', partial:'Partial' };
-const tipTypeMap = { voluntary:'Voluntary tips', service_charge:'Service charges only', both:'Mixed' };
-const liabilityMap = { yes:'Yes', low:'Low / breakeven', no:'None / losses' };
-const form8846Map  = { no:'No', yes:'Yes', unsure:'Unknown' };
-const empTypeMap   = { w2:'W-2 only', contractor:'1099 contractors', both:'Mixed W-2 + 1099' };
+const entityMap   = { scorp:'S Corporation', partnership:'Partnership / Multi-member LLC', ccorp:'C Corporation', sole_prop:'Sole Proprietorship / Single-member LLC' };
+const industryMap = { food_bev:'Food & Beverage', beauty:'Beauty & Personal Care', other:'Other' };
+const tipsMap     = { yes:'Yes — fully reported', no:'No', partial:'Partially reported' };
+const tipTypeMap  = { voluntary:'Voluntary customer tips', service_charge:'Mandatory service charges only', both:'Mix of voluntary tips and service charges' };
+const liabilityMap= { yes:'Yes', low:'Low / breakeven', no:'Minimal / none' };
+const form8846Map = { no:'No — never filed', yes:'Yes — filed previously', unsure:'Unknown' };
+const empTypeMap  = { w2:'W-2 employees only', contractor:'1099 contractors only', both:'Mix of W-2 and 1099' };
 
 function renderField(f) {
   let h = '<div class="field" id="fwrap_' + f.id + '">';
@@ -361,7 +268,7 @@ function renderField(f) {
     (f.options||[]).forEach(opt => {
       const sel = g(f.id) === opt.v ? ' sel' : '';
       h += '<label class="radio-opt' + sel + '" onclick="setR(\'' + f.id + '\',\'' + opt.v + '\',this.closest(\'.radio-group\'))">' +
-        '<input type="radio" name="' + f.id + '" value="' + opt.v + '"' + (sel ? ' checked' : '') + '/>' + opt.l + '</label>';
+        '<input type="radio" name="' + f.id + '" value="' + opt.v + '"' + (sel?' checked':'') + '/>' + opt.l + '</label>';
     });
     h += '</div>';
   } else if (f.type === 'select') {
@@ -383,285 +290,296 @@ function setR(id, val, group) {
   clearErr(id);
 }
 function setV(id, val) { answers[id] = val; clearErr(id); }
-function clearErr(id) { const e = document.getElementById('err_' + id); if(e) e.style.display='none'; }
+function clearErr(id) { const e = document.getElementById('err_' + id); if(e) e.style.display='none'; const w = document.getElementById('fwrap_' + id); if(w){ w.style.borderLeft=''; w.style.paddingLeft=''; } }
 
 function validate(fields) {
-  let ok = true;
+  let ok = true, firstErr = null;
   fields.forEach(f => {
     if (f.req && !g(f.id)) {
       const e = document.getElementById('err_' + f.id);
+      const w = document.getElementById('fwrap_' + f.id);
       if(e) e.style.display = 'block';
+      if(w) { w.style.borderLeft = '3px solid #a32d2d'; w.style.paddingLeft = '8px'; if(!firstErr) firstErr = w; }
       ok = false;
     }
   });
+  if (!ok && firstErr) firstErr.scrollIntoView({ behavior:'smooth', block:'center' });
   return ok;
 }
 
 function renderProgress() {
-  const pct = phase2Active ? 100 : Math.round((currentStep / phase1.length) * 100);
+  const pct = Math.round((currentStep / steps.length) * 100);
   document.getElementById('prog').style.width = pct + '%';
-  document.getElementById('prog-section').textContent = phase2Active ? 'Specialist appointment' : (phase1[currentStep]||{}).section || '';
-  document.getElementById('prog-step').textContent = phase2Active ? 'Phase 2 of 2' : 'Phase 1 — Step ' + (currentStep+1) + ' of ' + phase1.length;
+  document.getElementById('prog-section').textContent = (steps[currentStep]||{}).section || '';
+  document.getElementById('prog-step').textContent = 'Step ' + (currentStep+1) + ' of ' + steps.length;
 }
 
 function render() {
   renderProgress();
-  if (phase2Active) { renderPhase2Form(); return; }
-  const step = phase1[currentStep];
-  let html = '<div class="card">';
-  html += '<div class="phase-badge phase-1">Phase 1 — Qualification</div>';
+  const step = steps[currentStep];
+  let html = '<div class="card"><div class="phase-badge">Qualification — Step ' + (currentStep+1) + ' of ' + steps.length + '</div>';
   html += '<div class="section-title">' + step.section + '</div>';
   step.fields.forEach(f => { html += renderField(f); });
   html += '<div class="nav">';
-  if (currentStep > 0) html += '<button class="btn btn-secondary" onclick="back()">&#8592; Back</button>';
-  if (currentStep < phase1.length - 1) {
-    html += '<button class="btn btn-primary" onclick="next()">Next &#8594;</button>';
+  if (currentStep > 0) html += '<button class="btn btn-secondary" onclick="goBack()">&#8592; Back</button>';
+  if (currentStep < steps.length - 1) {
+    html += '<button class="btn btn-primary" onclick="goNext()">Next &#8594;</button>';
   } else {
-    html += '<button class="btn btn-primary" onclick="evaluate()">Review qualification &#10003;</button>';
+    html += '<button class="btn btn-primary" onclick="runQualify()">Review Qualification &#10003;</button>';
   }
-  html += '<span class="step-ct">Step ' + (currentStep+1) + ' / ' + phase1.length + '</span>';
+  html += '<span class="step-ct">Step ' + (currentStep+1) + ' / ' + steps.length + '</span>';
   html += '</div></div>';
   document.getElementById('app').innerHTML = html;
 }
 
-function back() { if(currentStep>0){ currentStep--; render(); } }
-function next() { if (!validate(phase1[currentStep].fields)) return; currentStep++; render(); window.scrollTo(0,0); }
-function evaluate() { if (!validate(phase1[currentStep].fields)) return; showResult(); }
+function goBack() { if(currentStep>0){ currentStep--; render(); } }
+function goNext() { if(!validate(steps[currentStep].fields)) return; currentStep++; render(); window.scrollTo(0,0); }
 
 function getDisqWarnNotes() {
   const a = answers;
   let disq = [], warnings = [], notes = [];
-  if (a.industry === 'other') disq.push('Industry does not qualify — Section 45B applies to food & beverage and beauty/personal care only.');
+  if (a.industry === 'other') disq.push('Industry does not qualify — Section 45B applies to food & beverage and beauty/personal care businesses only.');
   if (a.has_tipped === 'no') disq.push('No tipped employees — the credit requires W-2 employees who receive and report tips.');
-  if (a.employee_type === 'contractor') disq.push('Tipped workers are 1099 contractors — the credit applies only to W-2 employees.');
-  if (a.tips_reported === 'no') disq.push('Tips are not reported to the employer or IRS — reported tips on Form 941/W-2 are required.');
-  if (a.tip_type === 'service_charge') disq.push('Tips are mandatory service charges only — these do not qualify. Tips must be voluntarily determined by the customer.');
+  if (a.employee_type === 'contractor') disq.push('Tipped workers are 1099 contractors — the credit applies to W-2 employees only.');
+  if (a.tips_reported === 'no') disq.push('Tips are not reported to the IRS — reported tips on Form 941/W-2 are required to claim the credit.');
+  if (a.tip_type === 'service_charge') disq.push('Tips are mandatory service charges only — these do not qualify. The customer must voluntarily determine the tip amount.');
   const state = a.state || '';
-  if (NO_TIP_STATES.includes(state)) warnings.push(state + ' does not allow tip credit against minimum wage. The FICA credit still applies but the benefit may be reduced.');
-  if (a.employee_type === 'both') warnings.push('Mixed W-2/1099 workforce — credit applies to W-2 portion only.');
-  if (a.tip_type === 'both') warnings.push('Voluntary tips and mandatory service charges are mixed — only voluntary tips qualify.');
-  if (a.tips_reported === 'partial') warnings.push('Partial tip reporting — improving reporting practices will increase the credit amount.');
-  if (a.tax_liability === 'no') warnings.push('Low or no tax liability — non-refundable credit carries forward up to 20 years.');
-  if (a.tax_liability === 'low') warnings.push('Low tax liability — credit may partially refund and partially carry forward.');
-  if (a.multi_biz === 'yes') notes.push('Owner operates multiple businesses — credit multiplies across all qualifying locations.');
-  if (a.industry === 'beauty') notes.push('Beauty & personal care — newly eligible after 12/31/2024. Floor wage $7.25/hr. Tips must exceed 15% of gross receipts. First claim with 2025 return only.');
-  if (a.filed_8846 === 'no' || a.filed_8846 === 'unsure') notes.push('Form 8846 not previously filed — retroactive claims available for up to 3 prior years (food & beverage). Significant opportunity.');
-  if (a.filed_8846 === 'yes') notes.push('Previously filed Form 8846 — verify prior years were maximized and credit flowed correctly to personal return.');
+  if (NO_TIP_STATES.includes(state)) warnings.push(state + ' does not allow a tip credit against the state minimum wage. The federal FICA credit still applies, though the per-tip benefit structure differs slightly.');
+  if (a.employee_type === 'both') warnings.push('Mixed W-2/1099 workforce — credit applies to the W-2 portion only. Contractor tips must be excluded from the calculation.');
+  if (a.tip_type === 'both') warnings.push('Voluntary tips and mandatory service charges are mixed — only voluntary tips qualify and will need to be separated in the calculation.');
+  if (a.tips_reported === 'partial') warnings.push('Partial tip reporting — the credit can only be calculated on reported tips. Improving tip reporting practices going forward will increase the recoverable amount.');
+  if (a.tax_liability === 'no') warnings.push('Minimal tax liability — the Section 45B credit is non-refundable but carries forward up to 20 years. Still worth claiming.');
+  if (a.tax_liability === 'low') warnings.push('Low tax liability — the credit may partially offset current liability with the remainder carrying forward.');
+  if (a.multi_biz === 'yes') notes.push('Owner operates multiple businesses — the credit opportunity multiplies across all qualifying locations. This could significantly increase the total recoverable amount.');
+  if (a.industry === 'beauty') notes.push('Beauty & personal care — eligible beginning with the 2025 tax year (One Big Beautiful Bill). The wage floor is $7.25/hr and tips must exceed 15% of gross receipts. No retroactive years are available yet.');
+  if (a.filed_8846 === 'no' || a.filed_8846 === 'unsure') notes.push('Form 8846 has not been previously filed — retroactive claims are available for up to 3 prior years for food & beverage businesses. This is typically where the largest refund opportunity lives.');
+  if (a.filed_8846 === 'yes') notes.push('Form 8846 previously filed — our specialist will verify prior years were maximized and that the credit flowed correctly through Form 3800 to the appropriate return.');
   return { disq, warnings, notes };
 }
 
-function showResult() {
-  renderProgress();
+function runQualify() {
+  if(!validate(steps[currentStep].fields)) return;
   const { disq, warnings, notes } = getDisqWarnNotes();
   const qualified = disq.length === 0;
   const a = answers;
-  let html = '';
 
-  if (qualified) {
-    html += '<div class="result-qualify"><h2>&#10003; Appears to qualify</h2><p class="sub">Based on the information provided, <strong>' + (a.biz_name||'this business') + '</strong> meets the core eligibility requirements for the Section 45B FICA tip credit. Review any flags below, then proceed to collect specialist appointment details.</p></div>';
-  } else {
-    html += '<div class="result-disq"><h2>&#10005; Does not qualify</h2><p class="sub">' + disq[0] + '</p></div>';
+  if (!qualified) {
+    let html = '<div class="result-disq"><h2>&#10005; Does not qualify</h2><p class="sub">' + disq[0] + '</p></div>';
+    html += '<button class="restart-btn" onclick="restart()">&#8635; Start new intake</button>';
+    document.getElementById('app').innerHTML = html;
+    window.scrollTo(0,0);
+    return;
   }
 
-  html += '<div class="summary-card"><h4>Prospect summary</h4>';
-  [
-    ['Business', a.biz_name||'—'], ['Owner', a.owner_name||'—'], ['Phone', a.phone||'—'],
-    ['State', a.state||'—'], ['Industry', industryMap[a.industry]||'—'],
-    ['Entity type', entityMap[a.entity_type]||'—'],
-    ['Multiple businesses', {no:'No',yes:'Yes — '+(a.multi_biz_count||'multiple')}[a.multi_biz]||'—'],
-    ['Tipped employees', a.has_tipped==='yes'?(a.tipped_count?a.tipped_count+' employees':'Yes'):'No'],
-    ['Worker type', empTypeMap[a.employee_type]||'—'],
-    ['Avg hours/week', a.hours_per_week||'—'], ['Tips reported', tipsMap[a.tips_reported]||'—'],
-    ['Tip type', tipTypeMap[a.tip_type]||'—'], ['Avg hourly wage', a.hourly_wage||'—'],
-    ['Avg weekly tips/employee', a.weekly_tips||'—'],
-    ['Filed 8846 before', form8846Map[a.filed_8846]||'—'],
-    ['Tax liability', liabilityMap[a.tax_liability]||'—'],
-    ['Years in business', a.years_open||'—'], ['CPA / preparer', a.cpa||'—'],
-  ].forEach(([k,v]) => { html += '<div class="s-row"><span class="s-key">'+k+'</span><span class="s-val">'+v+'</span></div>'; });
+  // Build print page
+  buildPrint(a, warnings, notes);
+
+  // Submit to Formspree so rep gets a copy
+  submitToFormspree(a, warnings, notes);
+
+  // Show screen result
+  let html = '<div class="qualify-screen">';
+  html += '<h2>&#10003; ' + (a.biz_name||'This business') + ' appears to qualify</h2>';
+  html += '<p>Based on your answers, this business meets the core eligibility requirements for the Section 45B FICA Tip Credit. Print the qualification summary below to leave with the owner — it outlines exactly what comes next.</p>';
   html += '</div>';
-
-  if (disq.length > 1) {
-    html += '<div class="summary-card"><h4>All disqualifiers</h4><div class="flags-list">';
-    disq.forEach(d => { html += '<div class="flag-row"><span class="flag flag-bad">&#10005; Disqualified</span>'+d+'</div>'; });
-    html += '</div></div>';
-  }
-  if (warnings.length) {
-    html += '<div class="summary-card"><h4>Flags to review</h4><div class="flags-list">';
-    warnings.forEach(w => { html += '<div class="flag-row"><span class="flag flag-warn">&#9888; Flag</span>'+w+'</div>'; });
-    html += '</div></div>';
-  }
-  if (notes.length) {
-    html += '<div class="summary-card"><h4>Advisor notes</h4><div class="flags-list">';
-    notes.forEach(n => { html += '<div class="flag-row"><span class="flag flag-info">&#9432; Note</span>'+n+'</div>'; });
-    html += '</div></div>';
-  }
-
-  if (qualified) {
-    html += '<div class="nav" style="margin-top:1rem;"><button class="btn btn-primary" onclick="startPhase2()">Continue — collect appointment info &#8594;</button></div>';
-  }
+  html += '<div id="formspree-status" style="font-size:12px;color:#888780;text-align:center;padding:6px 0;">Sending rep notification...</div>';
+  html += '<button class="print-btn" onclick="window.print()">&#128438;&nbsp; Print / Save Qualification Summary as PDF</button>';
   html += '<button class="restart-btn" onclick="restart()">&#8635; Start new intake</button>';
   document.getElementById('app').innerHTML = html;
   window.scrollTo(0,0);
 }
 
-function startPhase2() { phase2Active = true; render(); }
+function submitToFormspree(a, warnings, notes) {
+  const entityMap2  = { scorp:'S Corporation', partnership:'Partnership / Multi-member LLC', ccorp:'C Corporation', sole_prop:'Sole Prop / Single-member LLC' };
+  const industryMap2 = { food_bev:'Food & Beverage', beauty:'Beauty & Personal Care', other:'Other' };
+  const tipsMap2    = { yes:'Yes — fully reported', no:'No', partial:'Partially reported' };
+  const tipTypeMap2 = { voluntary:'Voluntary tips', service_charge:'Service charges only', both:'Mixed' };
+  const liabilityMap2 = { yes:'Yes', low:'Low / breakeven', no:'Minimal / none' };
+  const form8846Map2 = { no:'No — never filed', yes:'Yes — filed previously', unsure:'Unknown' };
+  const empTypeMap2 = { w2:'W-2 only', contractor:'1099 contractors', both:'Mixed W-2 + 1099' };
 
-function renderPhase2Form() {
-  let html = '<div class="phase2-intro">';
-  html += '<h3>Almost there — one more section</h3>';
-  html += '<p><strong style="color:#c9a227">' + (g('biz_name')||'This business') + '</strong> appears to qualify. To prepare the specialist and set an appointment, we need a few more details.</p>';
-  html += '<div class="checklist">';
-  ['Revenue & payroll scale — helps size the total opportunity','Personal income range — determines refund vs. carry-forward','Best contact method & timing','Any notes that will help the specialist go in prepared'].forEach(item => {
-    html += '<div class="check-item-final"><div class="check-dot">&#10003;</div>' + item + '</div>';
+  const flagText = [
+    ...warnings.map(w => '⚠ ' + w),
+    ...notes.map(n => 'ℹ ' + n)
+  ].join('\n') || 'None';
+
+  const data = {
+    '_subject': 'FICA Qualifier — ' + (a.biz_name || 'New Prospect') + ' — ' + new Date().toLocaleDateString('en-US'),
+    'Business Name':        a.biz_name    || '—',
+    'Owner / Contact':      a.owner_name  || '—',
+    'Phone':                a.phone       || '—',
+    'State':                a.state       || '—',
+    'Industry':             industryMap2[a.industry]    || '—',
+    'Entity Type':          entityMap2[a.entity_type]   || '—',
+    'Multiple Locations':   a.multi_biz === 'yes' ? 'Yes — ' + (a.multi_biz_count || 'multiple') : 'No',
+    'Tipped Employees':     a.tipped_count ? a.tipped_count + ' employees' : (a.has_tipped==='yes'?'Yes':'No'),
+    'Worker Classification':empTypeMap2[a.employee_type]|| '—',
+    'Avg Hours / Week':     a.hours_per_week  || '—',
+    'Tips Reported to IRS': tipsMap2[a.tips_reported]   || '—',
+    'Tip Type':             tipTypeMap2[a.tip_type]     || '—',
+    'Avg Hourly Base Wage': a.hourly_wage     || '—',
+    'Avg Weekly Tips / Employee': a.weekly_tips || '—',
+    'Filed Form 8846 Before': form8846Map2[a.filed_8846]|| '—',
+    'Tax Liability':        liabilityMap2[a.tax_liability] || '—',
+    'Years in Business':    a.years_open  || '—',
+    'Qualification Result': 'QUALIFIES',
+    'Flags & Notes':        flagText,
+    'Submitted':            new Date().toLocaleString('en-US')
+  };
+
+  fetch('https://formspree.io/f/xbdbwdar', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(res => {
+    const el = document.getElementById('formspree-status');
+    if (!el) return;
+    if (res.ok) {
+      el.style.color = '#3b6d11';
+      el.textContent = '✓ Rep notification sent successfully.';
+    } else {
+      el.style.color = '#a32d2d';
+      el.textContent = '⚠ Notification failed to send — please screenshot this result for your records.';
+    }
+  })
+  .catch(() => {
+    const el = document.getElementById('formspree-status');
+    if (el) {
+      el.style.color = '#a32d2d';
+      el.textContent = '⚠ Notification failed to send — please screenshot this result for your records.';
+    }
   });
-  html += '</div></div>';
-  html += '<div class="card"><div class="phase-badge phase-2">Phase 2 — Specialist Appointment</div>';
-  html += '<div class="section-title">' + phase2.section + '</div>';
-  phase2.fields.forEach(f => { html += renderField(f); });
-  html += '<div class="nav"><button class="btn btn-secondary" onclick="backToResult()">&#8592; Back</button>';
-  html += '<button class="btn btn-primary" onclick="finalSubmit()">Complete &amp; generate PDF &#10003;</button>';
-  html += '</div></div>';
-  document.getElementById('app').innerHTML = html;
-  window.scrollTo(0,0);
 }
 
-function backToResult() { phase2Active = false; showResult(); }
-
-function finalSubmit() {
-  if (!validate(phase2.fields)) return;
-  buildPrintPage();
-  renderFinalScreen();
-}
-
-function buildPrintPage() {
-  const a = answers;
-  const { warnings, notes } = getDisqWarnNotes();
+function buildPrint(a, warnings, notes) {
+  const entity = a.entity_type;
+  const isPassThrough = (entity === 'scorp' || entity === 'partnership');
+  const isSoleProp    = (entity === 'sole_prop');
+  const isCCorp       = (entity === 'ccorp');
+  const bizName  = a.biz_name  || 'Your Business';
+  const ownerName = a.owner_name || '';
   const today = new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
 
-  let html = '<div class="pdf-page">';
+  // Entity-specific return language
+  let entityNotice = '';
+  let returnDocs = [];
+  if (isPassThrough) {
+    const formType = entity === 'scorp' ? 'Form 1120-S (S Corporation return)' : 'Form 1065 (Partnership return)';
+    entityNotice = 'Because <strong>' + bizName + '</strong> is structured as a ' + entityMap[entity] + ', the FICA Tip Credit flows through directly to the owner\'s personal tax return. This is actually great news — it means the credit reduces your personal tax liability dollar-for-dollar. To calculate and claim it, we\'ll need both your business and personal returns for each recovery year.';
+    returnDocs = [
+      { title: formType + ' — for each recovery year', desc: 'Your business income tax return, filed annually. We\'ll need up to 3 prior years to maximize your retroactive refund.' },
+      { title: 'Form 1040 (Personal return) — for each recovery year', desc: 'Required because your entity is a pass-through — the credit flows to your personal tax liability. We\'ll need the same years as the business returns.' },
+    ];
+  } else if (isCCorp) {
+    entityNotice = 'Because <strong>' + bizName + '</strong> is structured as a C Corporation, the FICA Tip Credit is claimed at the entity level and reduces your corporate tax liability directly. Only your business return is required — no personal return needed for this credit.';
+    returnDocs = [
+      { title: 'Form 1120 (C Corporation return) — for each recovery year', desc: 'Your corporate income tax return. We\'ll need up to 3 prior years to maximize your retroactive refund.' },
+    ];
+  } else {
+    entityNotice = 'Because <strong>' + bizName + '</strong> is structured as a Sole Proprietorship or Single-member LLC, your business activity is reported on your personal return. There is no separate business return — we\'ll just need your personal 1040 for each recovery year.';
+    returnDocs = [
+      { title: 'Form 1040 (Personal return, Schedule C) — for each recovery year', desc: 'Your business income and expenses are reported on Schedule C of your personal return. We\'ll need up to 3 prior years.' },
+    ];
+  }
+
+  const additionalDocs = [
+    { title: 'Form 941 — Quarterly Payroll Tax Returns', desc: 'Filed quarterly with the IRS, these show FICA taxes paid on employee wages and tips. Required for each quarter of each recovery year.' },
+    { title: 'W-2s for all tipped employees', desc: 'Specifically Box 7 (Social Security tips) and Box 8 (allocated tips) for each employee, for each recovery year.' },
+    { title: 'Payroll records showing hourly wages and tip income', desc: 'Records showing each employee\'s hourly rate, hours worked per week, and tips reported. Your payroll provider can typically generate this report.' },
+    { title: 'Form 8027 (if applicable)', desc: "Required for larger food & beverage establishments. This is the Employer's Annual Information Return of Tip Income and Allocated Tips." },
+  ];
+  if (a.filed_8846 === 'yes') {
+    additionalDocs.push({ title: 'Previously filed Form 8846', desc: 'If you have filed the FICA Tip Credit form in prior years, please provide copies so our specialist can verify accuracy and continuity.' });
+  }
+
+  let html = '<div class="pdf">';
 
   // Header
-  html += '<div class="pdf-header">';
-  html += '<div class="co-name">The Inspire Group &mdash; FICA Tip Credit Division</div>';
-  html += '<h1>You appear to qualify for the<br/>FICA Tip Credit</h1>';
-  html += '<p class="tagline">Based on our initial review, your business meets the core eligibility requirements for the Section 45B FICA Tip Credit — a federal dollar-for-dollar tax credit on FICA taxes paid on tipped employee wages. To set an appointment with one of our recovery specialists, please have the following information ready.</p>';
-  html += '<div class="prospect-name">' + (a.biz_name||'Business') + ' &nbsp;&mdash;&nbsp; ' + (a.owner_name||'') + ' &nbsp;&mdash;&nbsp; ' + today + '</div>';
-  html += '</div>';
+  html += '<div class="pdf-hdr">';
+  html += '<div class="pdf-hdr-top">The Inspire Group &mdash; FICA Tip Credit Division</div>';
+  html += '<h1>Great News &mdash; <span>' + bizName + '</span><br/>Appears to Qualify for a Significant Tax Refund.</h1>';
+  html += '<p class="pdf-hdr-sub">Based on our initial review, your business meets the core eligibility requirements for the <strong style="color:#c9a227">Section 45B FICA Tip Credit</strong> — a permanent federal tax credit that allows qualifying employers to recover a portion of the FICA taxes paid on employee tip income. Many restaurants have been leaving this money on the table for years without knowing it. We\'re here to change that.</p>';
+  html += '<div class="pdf-hdr-biz">';
+  if (ownerName) html += '<div class="pdf-hdr-biz-item"><div class="pdf-hdr-biz-label">Prepared for</div><div class="pdf-hdr-biz-val">' + ownerName + '</div></div>';
+  html += '<div class="pdf-hdr-biz-item"><div class="pdf-hdr-biz-label">Business</div><div class="pdf-hdr-biz-val">' + bizName + '</div></div>';
+  html += '<div class="pdf-hdr-biz-item"><div class="pdf-hdr-biz-label">Date</div><div class="pdf-hdr-biz-val">' + today + '</div></div>';
+  html += '</div></div>';
 
   html += '<div class="pdf-body">';
 
-  // Qualification banner
-  html += '<div class="pdf-qualify-banner"><p><strong>Preliminary qualification confirmed.</strong> This review is based on information provided during the initial intake conversation. Final determination and exact credit amount will be calculated by our recovery specialist using your payroll records and tax returns.</p></div>';
+  // Excitement band
+  html += '<div class="pdf-excite"><p>The FICA Tip Credit has been available since 1993 — yet the vast majority of qualifying restaurant owners have never claimed it, simply because it falls outside the scope of routine tax preparation. <strong>This is not your fault, and it\'s not too late.</strong> For most businesses, we\'re able to recover credits going back up to three years. The sooner we get started, the more we can put back in your pocket.</p></div>';
 
-  // What we need checklist
-  html += '<div class="pdf-section-title">What we\'ll need to set your specialist appointment</div>';
-  html += '<div class="pdf-checklist">';
-  const needs = [
-    { item: 'Business tax returns', sub: 'Form 1120, 1120-S, 1065, or personal return (if sole proprietorship) — for each open year (up to 3 years back for food & beverage)' },
-    { item: 'Payroll reports showing employee income', sub: 'Form 941 (quarterly payroll tax returns) for each applicable year' },
-    { item: 'Wages and hourly pay data', sub: 'Records showing hourly rates, hours worked, and tip income by employee' },
-    { item: 'W-2s for tipped employees', sub: 'Box 7 (Social Security tips) and Box 8 (allocated tips) for each year' },
-    { item: 'Form 8027 (if applicable)', sub: "Employer's Annual Information Return of Tip Income — required for larger food & beverage establishments" },
-    { item: 'Personal tax return', sub: 'Required if business is an S-corp (1120-S), partnership (1065), or trust (1041) — credit flows through to personal return' },
-    { item: 'Form 8846 (if previously filed)', sub: 'Credit for Employer Social Security and Medicare Taxes Paid on Certain Employee Tips — if you have filed this before' },
-  ];
-  needs.forEach(n => {
-    html += '<div class="pdf-check-item"><div class="pdf-chk"></div><div><div class="pdf-check-text">' + n.item + '</div><div class="pdf-check-sub">' + n.sub + '</div></div></div>';
-  });
-  html += '</div>';
+  // Section 1 — Info needed to set appt
+  html += '<div class="pdf-sec-hdr"><h2>What We\'ll Need to Schedule Your Specialist Appointment</h2><p>To prepare your recovery analysis and confirm the size of your potential refund, please have the following information ready when we follow up.</p></div>';
 
-  // Business profile
-  html += '<div class="pdf-section-title">Your business profile</div>';
-  html += '<div class="pdf-two-col">';
-  [
-    ['Business name', a.biz_name],
-    ['Owner name', a.owner_name],
+  html += '<div class="pdf-info-grid">';
+  const infoItems = [
+    ['Business Name', a.biz_name],
+    ['Owner / Contact', a.owner_name],
     ['Phone', a.phone],
     ['State', a.state],
     ['Industry', industryMap[a.industry]],
-    ['Entity type', entityMap[a.entity_type]],
-    ['Multiple locations', {no:'No',yes:'Yes — '+(a.multi_biz_count||'multiple')}[a.multi_biz]],
-    ['Tipped employees', a.tipped_count ? a.tipped_count + ' employees' : (a.has_tipped==='yes'?'Yes':'—')],
-    ['Avg hours/week', a.hours_per_week],
-    ['Avg hourly wage', a.hourly_wage],
-    ['Avg weekly tips', a.weekly_tips],
-    ['Tips reported to IRS', tipsMap[a.tips_reported]],
-    ['Filed Form 8846 before', form8846Map[a.filed_8846]],
-    ['Tax liability', liabilityMap[a.tax_liability]],
-    ['Years in business', a.years_open],
-    ['Current CPA', a.cpa],
-  ].forEach(([k,v]) => {
-    const val = v || '—';
-    const empty = (!v) ? ' empty' : '';
-    html += '<div class="pdf-field"><div class="lbl">'+k+'</div><div class="val'+empty+'">'+val+'</div></div>';
+    ['Entity Type', entityMap[a.entity_type]],
+    ['Multiple Locations', a.multi_biz === 'yes' ? 'Yes — ' + (a.multi_biz_count || 'multiple') : 'No'],
+    ['Tipped Employees', a.tipped_count ? a.tipped_count + ' employees' : (a.has_tipped==='yes'?'Yes':'—')],
+    ['Avg Hours / Week', a.hours_per_week],
+    ['Avg Hourly Base Wage', a.hourly_wage],
+    ['Avg Weekly Tips / Employee', a.weekly_tips],
+    ['Tips Reported to IRS', tipsMap[a.tips_reported]],
+    ['Filed Form 8846 Before', form8846Map[a.filed_8846]],
+    ['Tax Liability', liabilityMap[a.tax_liability]],
+    ['Years in Business', a.years_open],
+    ['Annual Business Revenue', null],
+    ['Annual Payroll & Expenses', null],
+    ['Personal Taxable Income (last return)', null],
+    ['Best Contact Method & Time', null],
+  ];
+  infoItems.forEach(([label, val]) => {
+    const hasVal = val && val !== '—';
+    html += '<div class="pdf-info-item"><div class="pdf-info-label">' + label + '</div>';
+    html += '<div class="pdf-info-val' + (hasVal ? '' : ' blank') + '">' + (hasVal ? val : '') + '</div></div>';
   });
   html += '</div>';
 
-  // Appointment details
-  html += '<div class="pdf-section-title">Appointment details</div>';
-  html += '<div class="pdf-two-col">';
-  [
-    ['Annual revenue', revenueMap[a.annual_revenue]],
-    ['Annual payroll', payrollMap[a.annual_payroll]],
-    ['Personal taxable income', incomeMap[a.personal_income]],
-    ['Best contact method', contactMap[a.best_contact]],
-    ['Email', a.email],
-    ['Best time to reach', a.best_time],
-  ].forEach(([k,v]) => {
-    const val = v || '—';
-    const empty = (!v) ? ' empty' : '';
-    html += '<div class="pdf-field"><div class="lbl">'+k+'</div><div class="val'+empty+'">'+val+'</div></div>';
-  });
-  html += '</div>';
-
-  if (a.notes) {
-    html += '<div class="pdf-section-title">Rep notes</div>';
-    html += '<div class="pdf-field"><div class="val">' + a.notes + '</div></div>';
-  }
-
-  // Flags
+  // Flags if any
   if (warnings.length || notes.length) {
-    html += '<div class="pdf-section-title">Flags &amp; notes for specialist</div>';
     html += '<div class="pdf-flags">';
-    warnings.forEach(w => { html += '<div class="pdf-flag-item"><span class="pdf-flag-badge pdf-flag-warn-b">&#9888; Flag</span>' + w + '</div>'; });
-    notes.forEach(n => { html += '<div class="pdf-flag-item"><span class="pdf-flag-badge pdf-flag-info-b">&#9432; Note</span>' + n + '</div>'; });
+    warnings.forEach(w => { html += '<div class="pdf-flag"><span class="pdf-flag-badge">&#9888; Note</span>' + w + '</div>'; });
+    notes.forEach(n => { html += '<div class="pdf-flag"><span class="pdf-flag-badge" style="background:#e8e7e3;color:#444441;">&#9432; Info</span>' + n + '</div>'; });
     html += '</div>';
   }
 
+  // Section 2 — Docs for appt (starts on new page)
+  html += '<div class="pdf-sec2"><div class="pdf-sec-hdr"><h2>Documents to Gather Before Your Appointment</h2><p>Our specialist will walk you through everything — but having these documents ready in advance will allow us to complete your recovery analysis quickly and get your refund moving.</p></div>';
+
+  html += '<div class="pdf-entity-notice"><p>' + entityNotice + '</p></div>';
+
+  html += '<div class="pdf-doc-wrap">';
+  [...returnDocs, ...additionalDocs].forEach(doc => {
+    html += '<div class="pdf-doc-item"><div class="pdf-doc-box"></div><div class="pdf-doc-text"><div class="pdf-doc-title">' + doc.title + '</div><div class="pdf-doc-desc">' + doc.desc + '</div></div></div>';
+  });
+  html += '</div>'; // end doc wrap
+  html += '</div>'; // end section 2
+
+  // CTA
+  html += '<div class="pdf-cta"><div class="pdf-cta-left"><h3>Ready to Recover Your Credits?</h3><p>There is no cost to you unless we recover money on your behalf.<br/>No disruption to your current CPA or payroll provider. No obligation whatsoever.</p></div>';
+  html += '<div class="pdf-cta-right"><div class="name">Mark Whittington</div><div class="phone">#630.885.4261</div></div></div>';
+
   html += '</div>'; // end pdf-body
 
-  // Footer
-  html += '<div class="pdf-footer">';
-  html += '<div class="ft-left">The Inspire Group &mdash; FICA Tip Credit Division &mdash; Confidential</div>';
-  html += '<div class="ft-right">Mark Whittington &nbsp; #630.885.4261</div>';
-  html += '</div>';
+  html += '<div class="pdf-ftr"><div class="pdf-ftr-left">The Inspire Group &mdash; FICA Tip Credit Division &mdash; Confidential</div><div class="pdf-ftr-right">Preliminary qualification only. Final determination made by recovery specialist.</div></div>';
 
   html += '</div>';
   document.getElementById('printArea').innerHTML = html;
 }
 
-function renderFinalScreen() {
-  const a = answers;
-  let html = '<div class="result-qualify"><h2>&#10003; Intake complete</h2>';
-  html += '<p class="sub"><strong>' + (a.biz_name||'This business') + '</strong> is ready to be passed to a recovery specialist. Print or save the PDF below to leave with the owner or bring to the appointment.</p></div>';
-  html += '<button class="print-btn" onclick="window.print()">&#128438; Print / Save as PDF</button>';
-  html += '<div class="summary-card" style="margin-top:10px;"><h4>Appointment brief</h4>';
-  [
-    ['Business', a.biz_name||'—'], ['Owner', a.owner_name||'—'],
-    ['Phone', a.phone||'—'], ['Email', a.email||'—'],
-    ['Best contact', contactMap[a.best_contact]||'—'], ['Best time', a.best_time||'—'],
-    ['Annual revenue', revenueMap[a.annual_revenue]||'—'],
-    ['Annual payroll', payrollMap[a.annual_payroll]||'—'],
-    ['Personal income', incomeMap[a.personal_income]||'—'],
-    ['Rep notes', a.notes||'—'],
-  ].forEach(([k,v]) => { html += '<div class="s-row"><span class="s-key">'+k+'</span><span class="s-val">'+v+'</span></div>'; });
-  html += '</div>';
-  html += '<button class="restart-btn" onclick="restart()">&#8635; Start new intake</button>';
-  document.getElementById('app').innerHTML = html;
-  window.scrollTo(0,0);
+function restart() {
+  currentStep = 0; answers = {};
+  document.getElementById('printArea').innerHTML = '';
+  render();
 }
-
-function restart() { currentStep=0; phase2Active=false; answers={}; document.getElementById('printArea').innerHTML=''; render(); }
 
 render();
 </script>
